@@ -520,20 +520,49 @@
       <div class="footer-inner">
         
 
-        
+        <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">
+      &copy; 2026
+      <span class="with-love">
+        <i class="fa fa-heart"></i>
+      </span>
+      <span class="author" itemprop="copyrightHolder">Maxkore</span>
+    </div>
+    
+    <!-- 添加docs链接按钮 - 跳转到 https://maxkore.bbroot.com/docs/ -->
+    <div style="margin-top: 20px; text-align: center;">
+      <a href="https://maxkore.bbroot.com/docs/" style="
+        display: inline-block;
+        padding: 10px 30px;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+        transition: all 0.3s ease;
+        border: none;
+      " target="_blank" rel="noopener">
+        <i class="fa fa-book"></i> 访问文档站
+      </a>
+    </div>
 
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2026</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Maxkore</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+    <!-- 隐藏原来的powered-by文字 -->
+    <style>
+      .powered-by {
+        display: none !important;
+      }
+      /* 确保没有重复的版权信息 */
+      .footer .copyright:only-of-type {
+        display: block;
+      }
+    </style>
+    
   </div>
-
+</footer>
         
 
 
