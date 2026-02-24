@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="极客索引 | 科技资源导航              &#x2F;* 全局样式重置与基础设置 *&#x2F;         * {             margin: 0;             padding: 0;             box-sizing: border-box;             font-family: &#39;Segoe UI&#39;, Roboto">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maxkore的博客">
+<meta property="og:url" content="http://example.com/%E6%9E%81%E5%AE%A2%E7%B4%A2%E5%BC%95.html">
+<meta property="og:site_name" content="Maxkore的博客">
+<meta property="og:description" content="极客索引 | 科技资源导航              &#x2F;* 全局样式重置与基础设置 *&#x2F;         * {             margin: 0;             padding: 0;             box-sizing: border-box;             font-family: &#39;Segoe UI&#39;, Roboto">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-23T05:43:03.533Z">
+<meta property="article:modified_time" content="2026-02-22T06:25:48.754Z">
+<meta property="article:author" content="Maxkore">
+<meta property="article:tag" content="HTML, CSS, JavaScript">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/%E6%9E%81%E5%AE%A2%E7%B4%A2%E5%BC%95">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title> | Maxkore的博客
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Maxkore的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">代码之外，思考之上。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content page posts-expand">
+            
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+</h1>
+
+<div class="post-meta">
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极客索引 | 科技资源导航</title>
+    <style>
+        /* 全局样式重置与基础设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* 科技风背景 - 粒子渐变+动态效果 */
+        body {
+            background: #0a0e17;
+            background: linear-gradient(135deg, #0a0e17 0%, #121826 50%, #1e293b 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #e2e8f0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 粒子背景装饰 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 80% 20%, rgba(129, 140, 248, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 40% 40%, rgba(192, 132, 252, 0.1) 0%, transparent 20%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* 容器布局 */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 标题样式 - 增强霓虹渐变+辉光 */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(74, 222, 128, 0.2);
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc, #38bdf8);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+            animation: neonGlow 3s linear infinite;
+        }
+
+        @keyframes neonGlow {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 200% 0%; }
+        }
+
+       /* 顶部悬浮区域（功能按钮+分类栏） */
+.top-sticky-area {
+    position: sticky;
+    top: 0; /* 改为贴顶，体验更好 */
+    z-index: 999;
+    background: rgba(30, 41, 59, 0.95); /* 提高不透明度，防止穿透 */
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 0 auto 2rem; /* 居中并只保留底部外边距 */
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    max-width: 1300px; /* 与容器宽度对齐 */
+    box-sizing: border-box;
+}
+
+        /* 功能按钮栏（新增：回收站、编辑、自定义分类按钮） */
+      /* 功能按钮栏（新增：回收站、编辑、自定义分类按钮） */
+.func-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* 从 1rem 增大到 1.5rem */
+    margin-bottom: 1.5rem; /* 从 1rem 增大到 1.5rem */
+    flex-wrap: wrap;
+}
+
+        .func-btn {
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            background: rgba(15, 23, 42, 0.8);
+            color: #e2e8f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .func-btn:hover {
+            border-color: #38bdf8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+        }
+
+        .recycle-btn {
+            border-color: rgba(248, 113, 113, 0.3);
+            color: #f87171;
+        }
+
+        .recycle-btn:hover {
+            border-color: #f87171;
+            background: rgba(248, 113, 113, 0.1);
+        }
+
+        .category-btn {
+            border-color: rgba(163, 230, 53, 0.3);
+            color: #a3e635;
+        }
+
+        .category-btn:hover {
+            border-color: #a3e635;
+            background: rgba(163, 230, 53, 0.1);
+        }
+
+       /* 分类标签栏 - 半透明悬浮 */
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem; /* 从 0.8rem 增大到 1.2rem */
+    padding: 1.2rem; /* 从 1rem 增大到 1.2rem */
+    margin-bottom: 1.5rem; /* 新增底部间距 */
+    background: rgba(30, 41, 59, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+        .category-tags button {
+            padding: 0.6rem 1.5rem;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 8px;
+            color: #94a3b8;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .category-tags button.active {
+            background: linear-gradient(90deg, #38bdf8, #60a5fa);
+            color: white;
+            border-color: #38bdf8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+        }
+
+        .category-tags button:hover {
+            border-color: #38bdf8;
+            color: #e2e8f0;
+        }
+
+        /* 搜索定位框 */
+.search-position-box {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1.5rem; /* 从 1rem 增大到 1.5rem */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+}
+        .search-input {
+            width: 200px;
+            padding: 0.8rem 1.2rem;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 8px;
+            color: #e2e8f0;
+            font-size: 1rem;
+            transition: width 0.3s ease, border-color 0.3s ease;
+            outline: none;
+        }
+
+        .search-input:focus, .search-input:not(:placeholder-shown) {
+            width: 400px;
+            border-color: #38bdf8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .action-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .locate-btn {
+            background: linear-gradient(90deg, #38bdf8, #60a5fa);
+        }
+
+        .jump-btn {
+            background: linear-gradient(90deg, #4ade80, #86efac);
+        }
+
+        /* 新增清除按钮样式 - 中性灰色，与其他功能区分 */
+        .clear-btn {
+            background: linear-gradient(90deg, #6b7280, #9ca3af);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 网站列表样式 */
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* 网站卡片样式 */
+        .site-card {
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 12px;
+            padding: 1.2rem;
+            border: 1px solid rgba(74, 222, 128, 0.1);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            cursor: grab;
+        }
+
+        .site-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .site-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(56, 189, 248, 0.1);
+        }
+
+        .site-card:hover::before {
+            opacity: 1;
+        }
+
+        .site-card:active {
+            cursor: grabbing;
+        }
+
+        /* 回收站卡片样式 */
+        .recycle-card {
+            opacity: 0.7;
+            border-color: rgba(248, 113, 113, 0.2);
+        }
+
+        .site-badge {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+            border: 2px solid #0a0e17;
+            z-index: 2;
+        }
+
+        .site-card a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            flex: 1;
+            padding-right: 1rem;
+            padding-left: 10px;
+            word-break: break-all;
+        }
+
+        .site-card a:hover {
+            color: #38bdf8;
+            text-shadow: 0 0 5px rgba(56, 189, 248, 0.2);
+        }
+
+        /* 操作按钮组（删除/恢复/编辑） */
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .card-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 2px solid #0a0e17;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .delete-btn {
+            background: rgba(248, 113, 113, 0.2);
+            color: #f87171;
+        }
+
+        .delete-btn:hover {
+            background: #f87171;
+            color: white;
+            box-shadow: 0 0 10px rgba(248, 113, 113, 0.5);
+        }
+
+        .restore-btn {
+            background: rgba(74, 222, 128, 0.2);
+            color: #4ade80;
+        }
+
+        .restore-btn:hover {
+            background: #4ade80;
+            color: white;
+            box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+        }
+
+        .edit-btn {
+            background: rgba(56, 189, 248, 0.2);
+            color: #38bdf8;
+        }
+
+        .edit-btn:hover {
+            background: #38bdf8;
+            color: white;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+        }
+
+        /* 拖拽相关样式 */
+        .dragging {
+            opacity: 0.5;
+            border-color: #818cf8;
+            box-shadow: 0 0 20px rgba(129, 140, 248, 0.4);
+        }
+
+        /* 弹窗通用样式 */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        /* 确认弹窗层级高于其他弹窗 */
+        #confirmModal {
+            z-index: 10000;
+        }
+
+        #recycleModal {
+            z-index: 9999;
+        }
+
+        #editModal {
+            z-index: 9998;
+        }
+
+        #categoryModal {
+            z-index: 9997;
+        }
+
+        .modal-content {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .modal-content h3 {
+            margin-bottom: 1.5rem;
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .modal-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .modal-form label {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .modal-form input, .modal-form select, .modal-form textarea {
+            padding: 0.8rem 1rem;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 8px;
+            color: #e2e8f0;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .modal-form input:focus, .modal-form textarea:focus {
+            border-color: #38bdf8;
+        }
+
+        .modal-form textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .modal-buttons button {
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-confirm {
+            background: linear-gradient(90deg, #38bdf8, #60a5fa);
+            color: white;
+        }
+
+        .modal-cancel {
+            background: #475569;
+            color: white;
+        }
+
+        .modal-danger {
+            background: linear-gradient(90deg, #ef4444, #f87171);
+            color: white;
+        }
+
+        .modal-buttons button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 自定义分类列表样式 */
+        .category-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 8px;
+            padding: 0.5rem;
+        }
+
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+        }
+
+        .category-item:last-child {
+            border-bottom: none;
+        }
+
+        .category-item span {
+            flex: 1;
+        }
+
+        .category-item button {
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .delete-category-btn {
+            background: #ef4444;
+            color: white;
+        }
+
+        /* 空状态提示 */
+        .empty-tip {
+            text-align: center;
+            padding: 3rem;
+            color: #94a3b8;
+            font-size: 1.2rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .site-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .site-badge, .card-btn {
+                width: 24px;
+                height: 24px;
+                font-size: 0.7rem;
+                top: -8px;
+                left: -8px;
+            }
+
+            .search-input:focus, .search-input:not(:placeholder-shown) {
+                width: 280px;
+            }
+
+            ./* 顶部悬浮区域（功能按钮+分类栏） */
+.top-sticky-area {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 1.5rem; /* 从 1rem 增大到 1.5rem */
+    margin: 0 auto 2rem;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    max-width: 1300px;
+    box-sizing: border-box;
+}
+
+            .func-buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .func-btn {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: rgba(56, 189, 248, 0.1);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+  border-color: #60a5fa;
+}
+
+/* 火箭默认：居中再往下更多一点 */
+.back-to-top svg {
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(6px); /* 往下 6px，更靠下 */
+}
+
+/* 悬停上移 + 喷火 */
+.back-to-top:hover svg {
+  transform: translateY(2px);
+}/* 火焰默认隐藏 */
+.flame {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.back-to-top:hover .flame {
+  opacity: 1;
+}
+    </style>
+</head>
+<div class="back-to-top" id="backToTop">
+  <svg width="32" height="44" viewBox="0 0 32 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 火箭 -->
+    <path d="M16 0L26 12H6L16 0Z" fill="#a5b4fc"/>
+    <rect x="10" y="12" width="12" height="14" rx="2" fill="#a5b4fc"/>
+    <path d="M4 26L10 26V18L4 26Z" fill="#a5b4fc"/>
+    <path d="M28 26L22 26V18L28 26Z" fill="#a5b4fc"/>
+    <circle cx="16" cy="18" r="3" fill="#1e293b"/>
+
+    <!-- 火焰 -->
+    <g class="flame">
+      <path d="M12 26 C12 26, 10 32, 16 40, 22 32, 20 26, 20 26 H12" fill="#f87171">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="0.3s" repeatCount="indefinite" />
+      </path>
+      <path d="M13 26 C13 26, 12 30, 16 36, 20 30, 19 26, 19 26 H13" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="0.2s" repeatCount="indefinite" begin="0.1s" />
+      </path>
+    </g>
+  </svg>
+</div><body>
+    <div class="container">
+        <!-- 标题区域 -->
+        <div class="header">
+            <h1>极客索引 🚀</h1>
+        </div>
+
+        <!-- 顶部悬浮区域（功能按钮+分类栏） -->
+        <div class="top-sticky-area">
+            <!-- 功能按钮栏（新增：自定义分类按钮） -->
+            <div class="func-buttons">
+                <button class="func-btn" id="addSiteBtn">➕ 添加网站</button>
+                <button class="func-btn category-btn" id="customCategoryBtn">📁 自定义分类</button>
+                <button class="func-btn recycle-btn" id="recycleBinBtn">🗑️ 回收站</button>
+                <button class="func-btn" id="clearRecycleBtn">🧹 清空回收站</button>
+            </div>
+
+            <!-- 分类标签栏 -->
+            <div class="category-tags" id="categoryTags">
+                <button class="active" data-category="all">全部</button>
+                <button data-category="oj">在线OJ</button>
+                <button data-category="blog">博客/文档</button>
+                <button data-category="tool">工具/资源</button>
+                <button data-category="video">视频/学习</button>
+                <button data-category="other">其他</button>
+            </div>
+
+		 <!-- 搜索定位框（已添加清除按钮） -->
+        <div class="search-position-box">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="searchInput" 
+                placeholder="文本/拼音/英文搜索/输入位置序号"
+            >
+            <div class="btn-group">
+                <button class="action-btn locate-btn" id="locateBtn">定位</button>
+                <button class="action-btn jump-btn" id="jumpBtn">跳转</button>
+                <!-- 新增清除按钮，点击清空搜索框 -->
+                <button class="action-btn clear-btn" id="clearSearchBtn">清除</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- 网站列表容器 -->
+        <div class="site-grid" id="siteGrid"></div>
+
+        <!-- 确认弹窗 -->
+        <div class="modal" id="confirmModal">
+            <div class="modal-content">
+                <h3 id="modalTitle">确认删除该网站？</h3>
+                <div class="modal-buttons">
+                    <button class="modal-confirm" id="modalConfirmBtn">确认</button>
+                    <button class="modal-cancel" id="modalCancelBtn">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 回收站弹窗 -->
+        <div class="modal" id="recycleModal">
+            <div class="modal-content">
+                <h3>🗑️ 回收站</h3>
+                <div id="recycleList" class="site-grid" style="margin-bottom: 1rem;"></div>
+                <div class="modal-buttons">
+                    <button class="modal-danger" id="emptyRecycleBtn">清空回收站</button>
+                    <button class="modal-cancel" id="closeRecycleBtn">关闭</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 编辑/添加网站弹窗 -->
+        <div class="modal" id="editModal">
+            <div class="modal-content">
+                <h3 id="editModalTitle">添加新网站</h3>
+                <form class="modal-form" id="editForm">
+                    <label for="siteName">网站名称</label>
+                    <input type="text" id="siteName" required placeholder="例如：【洛谷网】">
+                    
+                    <label for="siteUrl">网站链接</label>
+                    <input type="url" id="siteUrl" required placeholder="https://www.luogu.com.cn/">
+                    
+                    <label for="siteCategory">分类</label>
+                    <select id="siteCategory" required>
+                        <option value="oj">在线OJ</option>
+                        <option value="blog">博客/文档</option>
+                        <option value="tool">工具/资源</option>
+                        <option value="video">视频/学习</option>
+                        <option value="other">其他</option>
+                    </select>
+                    
+                    <label for="siteAlias">别名（拼音/英文/简写，用逗号分隔）</label>
+                    <input type="text" id="siteAlias" placeholder="例如：luogu,洛谷,lg">
+                </form>
+                <div class="modal-buttons">
+                    <button class="modal-confirm" id="saveSiteBtn">保存</button>
+                    <button class="modal-cancel" id="cancelEditBtn">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 自定义分类弹窗 -->
+        <div class="modal" id="categoryModal">
+            <div class="modal-content">
+                <h3>📁 自定义分类管理</h3>
+                <div class="modal-form">
+                    <label for="newCategoryName">新增分类名称</label>
+                    <input type="text" id="newCategoryName" placeholder="例如：AI工具、刷题笔记">
+                    
+                    <div class="category-list" id="customCategoryList">
+                        <!-- 自定义分类列表会动态渲染 -->
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-confirm" id="addCategoryBtn">添加分类</button>
+                    <button class="modal-cancel" id="closeCategoryBtn">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. 完整的初始网站数据（补齐所有缺失的网站）
+        const defaultSites = [
+            // OJ类
+            { name: "【洛谷网】", url: "https://www.luogu.com.cn/", category: "oj", alias: ["luogu", "洛谷", "lg"], clickCount: 0 },
+            { name: "【洛谷题解发布】", url: "https://www.luogu.com.cn/article/_new?problem=题号", category: "oj", alias: ["luogu题解发布", "洛谷发布题解"], clickCount: 0 },
+            { name: "【洛谷题解】", url: "https://www.luogu.com.cn/article?category=2", category: "oj", alias: ["luogu题解", "洛谷题解"], clickCount: 0 },
+            { name: "【洛谷保存站】", url: "https://www.luogu.me/", category: "oj", alias: ["luogu保存站", "洛谷保存站"], clickCount: 0 },
+            { name: "【洛谷仓库】", url: "https://luogu.store/", category: "oj", alias: ["luogu仓库", "洛谷仓库"], clickCount: 0 },
+            { name: "【力扣OJ】", url: "https://leetcode.cn/", category: "oj", alias: ["leetcode", "力扣", "lk", "lc"], clickCount: 0 },
+            { name: "【Codeforces OJ】", url: "https://codeforces.com/", category: "oj", alias: ["codeforces", "cf", "代码力"], clickCount: 0 },
+            { name: "【Atcoder OJ】", url: "https://atcoder.jp/home", category: "oj", alias: ["atcoder", "atc", "阿托"], clickCount: 0 },
+            { name: "【牛客OJ】", url: "https://ac.nowcoder.com/", category: "oj", alias: ["nowcoder", "牛客", "nk"], clickCount: 0 },
+            { name: "【Vijos OJ】", url: "https://vijos.org/", category: "oj", alias: ["vijos", "vj"], clickCount: 0 },
+            { name: "【Codechef OJ】", url: "https://www.codechef.com/signup", category: "oj", alias: ["codechef", "cc"], clickCount: 0 },
+            { name: "【ROJ】", url: "https://www.rqnoj.cn/", category: "oj", alias: ["roj", "rqnoj"], clickCount: 0 },
+            { name: "【UOJ】", url: "https://uoj.ac/", category: "oj", alias: ["uoj"], clickCount: 0 },
+            { name: "【LOJ】", url: "https://loj.ac/", category: "oj", alias: ["loj"], clickCount: 0 },
+            { name: "【Hydro-灵创梦光 OJ】", url: "https://hydro.ac/d/ling_chuang/", category: "oj", alias: ["hydro灵创", "灵创梦光"], clickCount: 0 },
+            { name: "【HydroOJ】", url: "https://hydro.ac/", category: "oj", alias: ["hydro", "hydrooj"], clickCount: 0 },
+            { name: "【Hydro-Hack】", url: "https://hydro.ac/d/域ID/p/题目ID/hack/提交编号", category: "oj", alias: ["hydrohack", "hydro hack"], clickCount: 0 },
+            { name: "【Hydro-灵创梦光 OJ题解创建】", url: "https://hydro.ac/d/ling_chuang/p/题目ID/solution", category: "oj", alias: ["hydro题解创建"], clickCount: 0 },
+            { name: "【Hydro OJ 文章节点】", url: "https://hydro.ac/d/ling_chuang/discuss/node/%E6%96%87%E7%AB%A0%E8%8A%82%E7%82%B9/create", category: "oj", alias: ["hydro文章节点"], clickCount: 0 },
+            { name: "【Hydro OJ 文章节点】", url: "https://hydro.ac/d/system/discuss/node/%E6%96%87%E7%AB%A0%E8%8A%82%E7%82%B9/create", category: "oj", alias: ["hydro系统文章节点"], clickCount: 0 },
+            { name: "【Hydro OJ 加入域】", url: "https://hydro.ac/domain/join?target=域名", category: "oj", alias: ["hydro加入域"], clickCount: 0 },
+            { name: "【Hydro OJ 我的域】", url: "https://hydro.ac/home/domain", category: "oj", alias: ["hydro我的域"], clickCount: 0 },
+            { name: "【云斗学院OJ】", url: "https://yundouxueyuan.com/", category: "oj", alias: ["云斗学院", "yundouxueyuan"], clickCount: 0 },
+            { name: "【东方博宜OJ】", url: "https://oj.czos.cn/problem/index", category: "oj", alias: ["东方博宜", "czos"], clickCount: 0 },
+            { name: "【一本通OJ】", url: "https://ybt.ssoier.cn/index.php", category: "oj", alias: ["一本通", "ybt"], clickCount: 0 },
+            { name: "【核桃OJ】", url: "https://htoj.com.cn/cpp/?page=4", category: "oj", alias: ["核桃oj", "htoj"], clickCount: 0 },
+            { name: "【COJ】", url: "https://www.cometoj.com/contests", category: "oj", alias: ["coj", "cometoj"], clickCount: 0 },
+            { name: "【QOJ】", url: "https://qoj.ac/", category: "oj", alias: ["qoj"], clickCount: 0 },
+            { name: "【赛氪OJ】", url: "https://oj.saikr.com/", category: "oj", alias: ["赛氪", "saikr"], clickCount: 0 },
+            { name: "【梦熊OJ】", url: "https://www.mxoj.net/", category: "oj", alias: ["梦熊oj", "mxoj"], clickCount: 0 },
+            { name: "【星空少儿OJ】", url: "http://119.91.239.69/category1.php", category: "oj", alias: ["星空少儿", "少儿oj"], clickCount: 0 },
+            { name: "【Online Judge OJ】", url: "https://judge.codemao.cn/", category: "oj", alias: ["codemao", "码奥oj"], clickCount: 0 },
+            { name: "【ACM Class OnlineJudge OJ】", url: "https://acm.sjtu.edu.cn/OnlineJudge/problem", category: "oj", alias: ["上交acm", "sjtu acm"], clickCount: 0 },
+            { name: "【清华在线评委OJ】", url: "https://dsa.cs.tsinghua.edu.cn/oj/foyer.shtml", category: "oj", alias: ["清华oj", "tsinghua oj"], clickCount: 0 },
+            { name: "【耕果OJ】", url: "https://wonderpython.run/", category: "oj", alias: ["耕果oj", "wonderpython"], clickCount: 0 },
+            { name: "【YZOJ】", url: "https://oj.imsunxinhao.xyz/", category: "oj", alias: ["yzoj", "imsunxinhao"], clickCount: 0 },
+            { name: "【Lao_OJ】", url: "https://laooj.yzoj.cc/", category: "oj", alias: ["laooj", "老oj"], clickCount: 0 },
+            { name: "【Games_OJ】", url: "https://www.gamesoj.cn/", category: "oj", alias: ["gamesoj", "游戏oj"], clickCount: 0 },
+            { name: "【上海市计算机学会竞赛平台】", url: "https://iai.sh.cn/", category: "oj", alias: ["上海计算机学会", "iai.sh.cn"], clickCount: 0 },
+
+            // 博客/文档类
+            { name: "【CSDN博客】", url: "https://blog.csdn.net/", category: "blog", alias: ["csdn", "CSDN博客", "编程博客"], clickCount: 0 },
+            { name: "【Anstuunwy题解博客】", url: "https://blog.csdn.net/ahstunwy", category: "blog", alias: ["ahstunwy", "anstuunwy题解"], clickCount: 0 },
+            { name: "【博客园】", url: "https://www.cnblogs.com/", category: "blog", alias: ["cnblogs", "博客园", "bkys"], clickCount: 0 },
+            { name: "【我的博客园个人主页】", url: "https://home.cnblogs.com/", category: "blog", alias: ["博客园个人主页"], clickCount: 0 },
+            { name: "【博客园友园】", url: "https://www.cnblogs.com/PinkRabbit", category: "blog", alias: ["pinkrabbit", "小粉兔博客"], clickCount: 0 },
+            { name: "【友链:小粉兔】", url: "https://home.cnblogs.com/u/PinkRabbit", category: "blog", alias: ["小粉兔", "pinkrabbit友链"], clickCount: 0 },
+            { name: "【博客园Blog/class班级】", url: "https://edu.cnblogs.com/campus/tsinghua/Luogu_class", category: "blog", alias: ["博客园班级", "清华洛谷班"], clickCount: 0 },
+            { name: "【博客园Blog/后台】", url: "https://i.cnblogs.com/", category: "blog", alias: ["博客园后台"], clickCount: 0 },
+            { name: "『OI Wiki』", url: "https://oi-wiki.org/", category: "blog", alias: ["oiwiki", "OI Wiki", "算法维基"], clickCount: 0 },
+            { name: "『Coderli Wiki』", url: "https://wiki.coderli.com/", category: "blog", alias: ["coderli wiki", "编程维基"], clickCount: 0 },
+            { name: "『Coderli Blog』", url: "https://www.coderli.com/", category: "blog", alias: ["coderli", "onecoder"], clickCount: 0 },
+            { name: "【Onecoder Blog】", url: "https://www.coderli.com/", category: "blog", alias: ["onecoder blog"], clickCount: 0 },
+            { name: "【塔尖wiki Blog】", url: "https://wsy0655.github.io/algo-wiki/", category: "blog", alias: ["塔尖wiki", "algo-wiki"], clickCount: 0 },
+            { name: "【Rode to coding Blog】", url: "https://r2coding.com/#/", category: "blog", alias: ["r2coding", "rode to coding"], clickCount: 0 },
+            { name: "【博客圈 Blog】", url: "https://www.boyouquan.com/home", category: "blog", alias: ["博客圈", "boyouquan"], clickCount: 0 },
+            { name: "【向叔记事簿 Blog】", url: "https://ttf248.life/", category: "blog", alias: ["向叔记事簿", "ttf248"], clickCount: 0 },
+            { name: "【平凡博客Blog】", url: "https://blog.hzyo.cn/admin/index.php", category: "blog", alias: ["平凡博客", "hzyo"], clickCount: 0 },
+            { name: "【菜鸟教程BLOG】", url: "https://www.runoob.com/", category: "blog", alias: ["菜鸟教程", "runoob"], clickCount: 0 },
+            { name: "【知乎】", url: "https://www.zhihu.com/", category: "blog", alias: ["zhihu", "知乎"], clickCount: 0 },
+
+            // 工具/资源类
+            { name: "【LaTeX编译器】", url: "https://www.latexlive.com/home", category: "tool", alias: ["latex", "LaTeX", "公式编辑器"], clickCount: 0 },
+            { name: "【运维游戏】", url: "https://chenzheaya.github.io/OnlineJudgeMaintainerSimulator/", category: "tool", alias: ["运维游戏", "oj运维模拟"], clickCount: 0 },
+            { name: "【盘共享】", url: "https://pan.gx.cn/", category: "tool", alias: ["盘共享", "pangxcn"], clickCount: 0 },
+            { name: "【文库搜索】", url: "https://www.jiumodiary.com/", category: "tool", alias: ["九陌日记", "文库搜索", "jiumodiary"], clickCount: 0 },
+            { name: "【字体库】", url: "https://www.100font.com/", category: "tool", alias: ["100font", "字体库"], clickCount: 0 },
+            { name: "【软酷网】", url: "https://www.ruanku.net/", category: "tool", alias: ["软酷网", "ruanku"], clickCount: 0 },
+            { name: "【123云盘】", url: "https://www.123pan.com/", category: "tool", alias: ["123云盘", "123pan"], clickCount: 0 },
+            { name: "【蓝奏云-云盘-控制台】", url: "https://www.ilanzou.com/console/files/0", category: "tool", alias: ["蓝奏云控制台", "ilanzou"], clickCount: 0 },
+            { name: "【蓝奏云-控制台】", url: "https://pc.woozooo.com/u", category: "tool", alias: ["蓝奏云控制台", "woozooo"], clickCount: 0 },
+            { name: "【畅言智AI】", url: "https://ai.changyan.com/", category: "tool", alias: ["畅言智AI", "changyan ai"], clickCount: 0 },
+            { name: "『灵光』", url: "https://www.lingguang.com/chat", category: "tool", alias: ["灵光", "lingguang ai"], clickCount: 0 },
+            { name: "【Gitcode】", url: "https://gitcode.com/", category: "tool", alias: ["gitcode", "码云"], clickCount: 0 },
+            { name: "【Github】", url: "https://github.com/", category: "tool", alias: ["github", "github代码"], clickCount: 0 },
+            { name: "【Maxkore-Geek.github.io】", url: "https://github.com/Maxkore-Geek/Maxkore-Geek.github.io", category: "tool", alias: ["Maxkore-Geek.github.io", "github","Maxkore"], clickCount: 0 },
+            { name: "【Maxkore-网站前缀】", url: "https://maxkore-geek.github.io/", category: "tool", alias: ["Maxkore-Geek.github.io", "github","Maxkore","前缀"], clickCount: 0 },            
+	     { name: "【Puzzle】", url: "https://www.puzzlemaster.ca/", category: "tool", alias: ["puzzle", "谜题大师"], clickCount: 0 },
+            { name: "【考试酷】", url: "https://www.examcoo.com/", category: "tool", alias: ["考试酷", "examcoo"], clickCount: 0 },
+            { name: "【食用手册】", url: "https://cook.yunyoujun.cn/", category: "tool", alias: ["食用手册", "yunyoujun"], clickCount: 0 },
+            { name: "【恶搞网站】", url: "https://pranx.com/", category: "tool", alias: ["pranx", "恶搞网站"], clickCount: 0 },
+            { name: "【周末小作业】", url: "https://mp.weixin.qq.com/s/_bY5b93pTZJ7rK9zKr_mJQ", category: "tool", alias: ["周末小作业"], clickCount: 0 },
+            { name: "【培优名卷】", url: "https://mp.weixin.qq.com/s/Ahfk7yLTzfu3-N7f_JECBg", category: "tool", alias: ["培优名卷"], clickCount: 0 },
+
+            // 视频/学习类
+            { name: "【B站】", url: "https://www.bilibili.com/", category: "video", alias: ["bilibili", "B站", "哔哩哔哩", "b站"], clickCount: 0 },
+            { name: "【第一课堂】", url: "https://space.bilibili.com/495418055/relation/follow?tagid=356093729", category: "video", alias: ["第一课堂", "b站第一课堂"], clickCount: 0 },
+            { name: "【B站-LetsLearning】", url: "https://space.bilibili.com/25488437", category: "video", alias: ["letslearning", "b站学习"], clickCount: 0 },
+            { name: "【B站-哔哩哔哩大学】", url: "https://space.bilibili.com/1092779255", category: "video", alias: ["哔哩哔哩大学", "b站大学"], clickCount: 0 },
+            { name: "【B站-kkksc03】", url: "https://space.bilibili.com/678962", category: "video", alias: ["kkksc03", "b站kkksc03"], clickCount: 0 },
+
+            // 其他类
+            { name: "【CSDN Blog】", url: "https://blog.csdn.net/", category: "other", alias: ["csdn blog"], clickCount: 0 },
+            { name: "【博客园Blog】", url: "https://www.cnblogs.com/", category: "other", alias: ["博客园blog"], clickCount: 0 }
+        ];
+
+        // 2. DOM元素获取
+        const siteGrid = document.getElementById('siteGrid');
+        const searchInput = document.getElementById('searchInput');
+        const locateBtn = document.getElementById('locateBtn');
+        const jumpBtn = document.getElementById('jumpBtn');
+        const confirmModal = document.getElementById('confirmModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalConfirmBtn = document.getElementById('modalConfirmBtn');
+        const modalCancelBtn = document.getElementById('modalCancelBtn');
+        const categoryTags = document.getElementById('categoryTags');
+        const categoryButtons = document.querySelectorAll('.category-tags button');
+        
+        // 新增元素（回收站、编辑、自定义分类）
+        const recycleBinBtn = document.getElementById('recycleBinBtn');
+        const recycleModal = document.getElementById('recycleModal');
+        const recycleList = document.getElementById('recycleList');
+        const emptyRecycleBtn = document.getElementById('emptyRecycleBtn');
+        const closeRecycleBtn = document.getElementById('closeRecycleBtn');
+        const addSiteBtn = document.getElementById('addSiteBtn');
+        const editModal = document.getElementById('editModal');
+        const editModalTitle = document.getElementById('editModalTitle');
+        const editForm = document.getElementById('editForm');
+        const siteNameInput = document.getElementById('siteName');
+        const siteUrlInput = document.getElementById('siteUrl');
+        const siteCategoryInput = document.getElementById('siteCategory');
+        const siteAliasInput = document.getElementById('siteAlias');
+        const saveSiteBtn = document.getElementById('saveSiteBtn');
+        const cancelEditBtn = document.getElementById('cancelEditBtn');
+        const clearRecycleBtn = document.getElementById('clearRecycleBtn');
+        const customCategoryBtn = document.getElementById('customCategoryBtn');
+        const categoryModal = document.getElementById('categoryModal');
+        const newCategoryNameInput = document.getElementById('newCategoryName');
+        const addCategoryBtn = document.getElementById('addCategoryBtn');
+        const closeCategoryBtn = document.getElementById('closeCategoryBtn');
+        const customCategoryList = document.getElementById('customCategoryList');
+
+        // 3. 状态管理
+        let currentAction = null;
+        let currentIndex = -1; // 全局索引
+        let editIndex = -1; // 编辑的网站索引（全局索引）
+        let dragSrcIndex = -1; // 拖拽源索引（全局索引）
+        let currentCategory = 'all';
+        let isRecycleMode = false; // 是否显示回收站
+
+        // 4. 本地存储操作（新增自定义分类）
+        function getSitesFromStorage() {
+            const stored = localStorage.getItem('geekIndexSites');
+            return stored ? JSON.parse(stored) : defaultSites;
+        }
+
+        function saveSitesToStorage(sites) {
+            localStorage.setItem('geekIndexSites', JSON.stringify(sites));
+        }
+
+        function getRecycleFromStorage() {
+            const stored = localStorage.getItem('geekIndexRecycle');
+            return stored ? JSON.parse(stored) : [];
+        }
+
+        function saveRecycleToStorage(recycle) {
+            localStorage.setItem('geekIndexRecycle', JSON.stringify(recycle));
+        }
+
+        // 自定义分类存储操作
+        function getCustomCategoriesFromStorage() {
+            const stored = localStorage.getItem('geekIndexCustomCats');
+            return stored ? JSON.parse(stored) : [];
+        }
+
+        function saveCustomCategoriesToStorage(categories) {
+            localStorage.setItem('geekIndexCustomCats', JSON.stringify(categories));
+            renderCategoryTags(); // 刷新分类标签
+            updateCategorySelect(); // 更新添加网站的分类下拉框
+        }
+
+        // 5. 记录点击量
+        function updateClickCount(index) {
+            const sites = getSitesFromStorage();
+            if (index >= 0 && index < sites.length) {
+                sites[index].clickCount = (sites[index].clickCount || 0) + 1;
+                saveSitesToStorage(sites);
+            }
+        }
+
+       // 6. 多维度匹配（修复：确保无匹配时返回 null）
+function getBestMatchSite(inputText) {
+    const allSites = getSitesFromStorage();
+    let sites = allSites;
+    if (currentCategory !== 'all') {
+        sites = allSites.filter(site => site.category === currentCategory);
+    }
+
+    if (!inputText.trim() || sites.length === 0) return null;
+
+    // 数字匹配
+    if (!isNaN(parseInt(inputText))) {
+        const pos = parseInt(inputText);
+        if (pos >= 1 && pos <= sites.length) {
+            const matchedSiteInCurrentList = sites[pos - 1];
+            const realIndexInAll = allSites.findIndex(s => 
+                s.name === matchedSiteInCurrentList.name && s.url === matchedSiteInCurrentList.url
+            );
+            return { 
+                site: matchedSiteInCurrentList, 
+                index: realIndexInAll 
+            };
+        } else {
+            return null; // 数字超出范围，无匹配
+        }
+    }
+
+    // 文本匹配
+    const lowerInput = inputText.toLowerCase().trim();
+    const matchResults = [];
+
+    sites.forEach((site, idxInCurrent) => {
+        const cleanName = site.name.toLowerCase().replace(/【|】|『|』|\[|\]/g, '');
+        const aliases = (site.alias || []).map(a => a.toLowerCase());
+        
+        let score = 0;
+        const clickCount = site.clickCount || 0;
+
+        if (cleanName === lowerInput || aliases.includes(lowerInput)) score += 100;
+        else if (cleanName.startsWith(lowerInput) || aliases.some(a => a.startsWith(lowerInput))) score += 90;
+        else if (cleanName.includes(lowerInput) || aliases.some(a => a.includes(lowerInput))) score += 80;
+        else {
+            const matchChars = Array.from(lowerInput).filter(char => 
+                cleanName.includes(char) || aliases.some(a => a.includes(char))
+            ).length;
+            score = (matchChars / lowerInput.length) * 70;
+        }
+
+        score += clickCount * 2;
+
+        if (score > 0) {
+            const realIndexInAll = allSites.findIndex(s => 
+                s.name === site.name && s.url === site.url
+            );
+            matchResults.push({ 
+                site, 
+                index: realIndexInAll, 
+                score, 
+                clickCount 
+            });
+        }
+    });
+
+    if (matchResults.length > 0) {
+        matchResults.sort((a, b) => b.score - a.score);
+        return matchResults[0];
+    } else {
+        return null; // 文本无匹配
+    }
+}
+
+        // 7. 跳转到必应搜索（无弹窗直接跳转）
+        function goToBingSearch(searchText) {
+            const bingUrl = `https://cn.bing.com/search?q=${encodeURIComponent(searchText)}&mkt=zh-CN`;
+            window.open(bingUrl, '_blank');
+        }
+
+     // 8. 定位功能（修复：在当前分类内定位，不切换分类）
+function locateToBestMatch() {
+    const inputText = searchInput.value.trim();
+    if (!inputText) {
+        alert('请输入搜索关键词/拼音/英文或位置序号！');
+        return;
+    }
+
+    const matchResult = getBestMatchSite(inputText);
+    if (matchResult) {
+        setTimeout(() => {
+            // 获取当前分类下的网站列表
+            const allSites = getSitesFromStorage();
+            let currentList = allSites;
+            if (currentCategory !== 'all') {
+                currentList = allSites.filter(site => site.category === currentCategory);
+            }
+            // 找到匹配网站在当前列表中的索引
+            const idxInCurrentList = currentList.findIndex(s => 
+                s.name === matchResult.site.name && s.url === matchResult.site.url
+            );
+            if (idxInCurrentList !== -1) {
+                const targetCard = document.querySelector(`.site-card[data-index="${idxInCurrentList}"]`);
+                if (targetCard) {
+                    targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetCard.style.borderColor = '#4ade80';
+                    targetCard.style.boxShadow = '0 0 20px rgba(74, 222, 128, 0.5)';
+                    setTimeout(() => {
+                        targetCard.style.borderColor = '';
+                        targetCard.style.boxShadow = '';
+                    }, 2000);
+                } else {
+                    goToBingSearch(inputText);
+                }
+            } else {
+                goToBingSearch(inputText);
+            }
+        }, 50);
+    } else {
+        goToBingSearch(inputText);
+    }
+}
+
+// 9. 跳转功能（修复：无匹配时直接跳转必应）
+function jumpToBestMatch() {
+    const inputText = searchInput.value.trim();
+    if (!inputText) {
+        alert('请输入搜索关键词/拼音/英文或位置序号！');
+        return;
+    }
+
+    const matchResult = getBestMatchSite(inputText);
+    if (matchResult) {
+        updateClickCount(matchResult.index);
+        window.open(matchResult.site.url, '_blank');
+    } else {
+        goToBingSearch(inputText);
+    }
+}
+        // 10. 渲染网站列表 - 修复索引问题
+        function renderSites(category = currentCategory) {
+            siteGrid.innerHTML = '';
+            let allSites = getSitesFromStorage();
+
+            // 分类筛选（支持自定义分类）
+            let filteredSites = allSites;
+            if (category !== 'all') {
+                filteredSites = allSites.filter(site => site.category === category);
+            }
+
+            // 空状态
+            if (filteredSites.length === 0) {
+                siteGrid.innerHTML = '<div class="empty-tip">暂无网站数据 📭</div>';
+                return;
+            }
+
+            // 生成卡片
+            filteredSites.forEach((site, indexInFiltered) => {
+                // 找到该网站在全部数据中的真实索引
+                const realIndex = allSites.findIndex(s => 
+                    s.name === site.name && s.url === site.url
+                );
+                
+                const card = document.createElement('div');
+                card.className = 'site-card';
+                card.draggable = true;
+                card.dataset.index = indexInFiltered; // 当前分类下的索引
+                card.dataset.realIndex = realIndex; // 真实全局索引
+                card.innerHTML = `
+                    <span class="site-badge">${indexInFiltered + 1}</span>
+                    <a href="javascript:void(0);" class="site-link" data-real-index="${realIndex}">${site.name}</a>
+                    <div class="card-actions">
+                        <span class="card-btn edit-btn" data-real-index="${realIndex}" title="编辑">✏️</span>
+                        <span class="card-btn delete-btn" data-real-index="${realIndex}" title="删除">🗑️</span>
+                    </div>
+                `;
+                siteGrid.appendChild(card);
+
+                // 卡片链接点击
+                card.querySelector('.site-link').addEventListener('click', function() {
+                    const realIdx = parseInt(this.dataset.realIndex);
+                    updateClickCount(realIdx);
+                    window.open(allSites[realIdx].url, '_blank');
+                });
+
+                // 编辑按钮
+                card.querySelector('.edit-btn').addEventListener('click', function() {
+                    const realIdx = parseInt(this.dataset.realIndex);
+                    editIndex = realIdx; // 使用真实索引
+                    const editSite = allSites[realIdx];
+                    editModalTitle.textContent = '编辑网站';
+                    siteNameInput.value = editSite.name;
+                    siteUrlInput.value = editSite.url;
+                    siteCategoryInput.value = editSite.category;
+                    siteAliasInput.value = (editSite.alias || []).join(',');
+                    editModal.classList.add('active');
+                });
+
+                // 删除按钮
+                card.querySelector('.delete-btn').addEventListener('click', function() {
+                    const realIdx = parseInt(this.dataset.realIndex);
+                    currentIndex = realIdx; // 使用真实索引
+                    currentAction = { type: 'delete', index: realIdx };
+                    modalTitle.textContent = `确认删除「${allSites[realIdx].name}」？`;
+                    confirmModal.classList.add('active');
+                });
+
+                // 拖拽事件
+                card.addEventListener('dragstart', handleDragStart);
+                card.addEventListener('dragover', handleDragOver);
+                card.addEventListener('drop', handleDrop);
+                card.addEventListener('dragend', handleDragEnd);
+            });
+        }
+
+        // 11. 渲染回收站
+        function renderRecycle() {
+            const recycle = getRecycleFromStorage();
+            recycleList.innerHTML = '';
+
+            if (recycle.length === 0) {
+                recycleList.innerHTML = '<div class="empty-tip">回收站为空 🗑️</div>';
+                return;
+            }
+
+            recycle.forEach((site, index) => {
+                const card = document.createElement('div');
+                card.className = 'site-card recycle-card';
+                card.dataset.index = index;
+                card.innerHTML = `
+                    <span class="site-badge">${index + 1}</span>
+                    <a href="javascript:void(0);" class="site-link" data-index="${index}">${site.name}</a>
+                    <div class="card-actions">
+                        <span class="card-btn restore-btn" data-index="${index}" title="恢复">🔄</span>
+                        <span class="card-btn delete-btn" data-index="${index}" title="永久删除">🗑️</span>
+                    </div>
+                `;
+                recycleList.appendChild(card);
+
+                // 恢复按钮
+                card.querySelector('.restore-btn').addEventListener('click', function() {
+                    const idx = parseInt(this.dataset.index);
+                    restoreFromRecycle(idx);
+                });
+
+                // 永久删除按钮
+                card.querySelector('.delete-btn').addEventListener('click', function() {
+                    const idx = parseInt(this.dataset.index);
+                    currentAction = { type: 'deleteRecycle', index: idx };
+                    modalTitle.textContent = `确认永久删除「${recycle[idx].name}」？`;
+                    confirmModal.classList.add('active');
+                });
+            });
+        }
+
+        // 12. 渲染分类标签（包含自定义分类）
+        function renderCategoryTags() {
+            // 清空原有分类（保留全部按钮）
+            categoryTags.innerHTML = '<button class="active" data-category="all">全部</button>';
+            
+            // 默认分类
+            const defaultCats = [
+                { id: 'oj', name: '在线OJ' },
+                { id: 'blog', name: '博客/文档' },
+                { id: 'tool', name: '工具/资源' },
+                { id: 'video', name: '视频/学习' },
+                { id: 'other', name: '其他' }
+            ];
+
+            // 自定义分类
+            const customCats = getCustomCategoriesFromStorage();
+
+            // 渲染默认分类
+            defaultCats.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.dataset.category = cat.id;
+                btn.textContent = cat.name;
+                btn.addEventListener('click', handleCategoryClick);
+                categoryTags.appendChild(btn);
+            });
+
+            // 渲染自定义分类
+            customCats.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.dataset.category = cat.id;
+                btn.textContent = cat.name;
+                btn.addEventListener('click', handleCategoryClick);
+                categoryTags.appendChild(btn);
+            });
+
+            // 激活当前分类
+            const activeBtn = categoryTags.querySelector(`button[data-category="${currentCategory}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            }
+        }
+
+        // 13. 更新添加网站的分类下拉框（包含自定义分类）
+        function updateCategorySelect() {
+            // 保留默认选项
+            siteCategoryInput.innerHTML = `
+                <option value="oj">在线OJ</option>
+                <option value="blog">博客/文档</option>
+                <option value="tool">工具/资源</option>
+                <option value="video">视频/学习</option>
+                <option value="other">其他</option>
+            `;
+
+            // 添加自定义分类选项
+            const customCats = getCustomCategoriesFromStorage();
+            customCats.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat.id;
+                option.textContent = cat.name;
+                siteCategoryInput.appendChild(option);
+            });
+        }
+
+        // 14. 渲染自定义分类列表
+        function renderCustomCategoryList() {
+            const customCats = getCustomCategoriesFromStorage();
+            customCategoryList.innerHTML = '';
+
+            if (customCats.length === 0) {
+                customCategoryList.innerHTML = '<div class="empty-tip" style="padding: 1rem; font-size: 0.9rem;">暂无自定义分类</div>';
+                return;
+            }
+
+            customCats.forEach((cat, index) => {
+                const item = document.createElement('div');
+                item.className = 'category-item';
+                item.innerHTML = `
+                    <span>${cat.name}</span>
+                    <button class="delete-category-btn" data-index="${index}">删除</button>
+                `;
+                customCategoryList.appendChild(item);
+
+                // 删除自定义分类
+                item.querySelector('.delete-category-btn').addEventListener('click', function() {
+                    const idx = parseInt(this.dataset.index);
+                    deleteCustomCategory(idx);
+                });
+            });
+        }
+
+        // 15. 添加自定义分类
+        function addCustomCategory() {
+            const catName = newCategoryNameInput.value.trim();
+            if (!catName) {
+                alert('分类名称不能为空！');
+                return;
+            }
+
+            const customCats = getCustomCategoriesFromStorage();
+            // 生成唯一ID（时间戳+随机数）
+            const catId = 'custom_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
+            
+            customCats.push({ id: catId, name: catName });
+            saveCustomCategoriesToStorage(customCats);
+            
+            newCategoryNameInput.value = '';
+            renderCustomCategoryList();
+        }
+
+        // 16. 删除自定义分类
+        function deleteCustomCategory(index) {
+            if (!confirm('确认删除该分类？该分类下的网站不会被删除，会归类到"其他"分类。')) {
+                return;
+            }
+
+            const customCats = getCustomCategoriesFromStorage();
+            const deletedCatId = customCats[index].id;
+            customCats.splice(index, 1);
+            
+            // 更新网站分类（将删除分类下的网站归为other）
+            const sites = getSitesFromStorage();
+            sites.forEach(site => {
+                if (site.category === deletedCatId) {
+                    site.category = 'other';
+                }
+            });
+            
+            saveCustomCategoriesToStorage(customCats);
+            saveSitesToStorage(sites);
+            renderCustomCategoryList();
+            renderSites();
+        }
+
+        // 17. 分类点击处理
+        function handleCategoryClick() {
+            const allBtns = categoryTags.querySelectorAll('button');
+            allBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentCategory = this.dataset.category;
+            renderSites(currentCategory);
+        }
+
+        // 18. 拖拽功能 - 修复使用真实索引
+        function handleDragStart(e) {
+            dragSrcIndex = parseInt(this.dataset.realIndex); // 使用真实索引
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/plain', dragSrcIndex);
+        }
+
+        function handleDragOver(e) {
+            if (e.preventDefault) e.preventDefault();
+            this.style.borderColor = '#38bdf8';
+            this.style.boxShadow = '0 0 20px rgba(56, 189, 248, 0.3)';
+            return false;
+        }
+
+        function handleDrop(e) {
+            e.stopPropagation();
+            const toIndex = parseInt(this.dataset.realIndex); // 使用真实索引
+            if (dragSrcIndex === toIndex) return;
+
+            currentAction = { type: 'move', from: dragSrcIndex, to: toIndex };
+            modalTitle.textContent = '确认调整网站位置？';
+            confirmModal.classList.add('active');
+            return false;
+        }
+
+        function handleDragEnd() {
+            this.classList.remove('dragging');
+            document.querySelectorAll('.site-card').forEach(card => {
+                card.style.borderColor = '';
+                card.style.boxShadow = '';
+            });
+        }
+
+        // 19. 调整网站位置
+        function moveSite(fromIndex, toIndex) {
+            const sites = getSitesFromStorage();
+            const [movedSite] = sites.splice(fromIndex, 1);
+            sites.splice(toIndex, 0, movedSite);
+            saveSitesToStorage(sites);
+            renderSites();
+        }
+
+        // 20. 删除网站（移到回收站）
+        function deleteSite(index) {
+            const sites = getSitesFromStorage();
+            const recycle = getRecycleFromStorage();
+            
+            // 移到回收站
+            const deletedSite = sites.splice(index, 1)[0];
+            recycle.push(deletedSite);
+            
+            saveSitesToStorage(sites);
+            saveRecycleToStorage(recycle);
+            renderSites();
+        }
+
+        // 21. 从回收站恢复
+        function restoreFromRecycle(index) {
+            const recycle = getRecycleFromStorage();
+            const sites = getSitesFromStorage();
+            
+            // 恢复到网站列表
+            const restoredSite = recycle.splice(index, 1)[0];
+            sites.push(restoredSite);
+            
+            saveRecycleToStorage(recycle);
+            saveSitesToStorage(sites);
+            renderRecycle();
+            renderSites();
+        }
+
+        // 22. 永久删除回收站内容
+        function deleteFromRecycle(index) {
+            const recycle = getRecycleFromStorage();
+            recycle.splice(index, 1);
+            saveRecycleToStorage(recycle);
+            renderRecycle();
+        }
+
+        // 23. 清空回收站（二次确认）
+        function emptyRecycle() {
+            if (confirm('确认清空回收站？此操作不可恢复！')) {
+                saveRecycleToStorage([]);
+                renderRecycle();
+            }
+        }
+
+        // 24. 添加/编辑网站（编辑后确认信息）
+        function saveSite() {
+            const name = siteNameInput.value.trim();
+            const url = siteUrlInput.value.trim();
+            const category = siteCategoryInput.value;
+            const alias = siteAliasInput.value.trim().split(',').map(a => a.trim()).filter(a => a);
+
+            if (!name || !url) {
+                alert('网站名称和链接不能为空！');
+                return;
+            }
+
+            const sites = getSitesFromStorage();
+            const siteData = { name, url, category, alias, clickCount: 0 };
+
+            if (editIndex >= 0) {
+                // 编辑现有网站
+                siteData.clickCount = sites[editIndex].clickCount; // 保留点击量
+                // 确认信息是否正确
+                if (confirm(`确认修改网站信息为：\n名称：${name}\n链接：${url}\n分类：${category}\n别名：${alias.join(', ')}`)) {
+                    sites[editIndex] = siteData;
+                    editIndex = -1;
+                } else {
+                    return; // 用户取消修改
+                }
+            } else {
+                // 添加新网站
+                if (confirm(`确认添加新网站：\n名称：${name}\n链接：${url}\n分类：${category}\n别名：${alias.join(', ')}`)) {
+                    sites.push(siteData);
+                } else {
+                    return; // 用户取消添加
+                }
+            }
+
+            saveSitesToStorage(sites);
+            editModal.classList.remove('active');
+            editForm.reset();
+            renderSites();
+        }
+
+        // 25. 绑定事件
+        // 核心功能（无匹配直接跳必应）
+        locateBtn.addEventListener('click', locateToBestMatch);
+        jumpBtn.addEventListener('click', jumpToBestMatch);
+        searchInput.addEventListener('keypress', e => e.key === 'Enter' && locateToBestMatch());
+
+        // 分类筛选（动态绑定）
+        function rebindCategoryEvents() {
+            categoryTags.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', handleCategoryClick);
+            });
+        }
+
+        // 回收站
+        recycleBinBtn.addEventListener('click', () => {
+            recycleModal.classList.add('active');
+            renderRecycle();
+        });
+        closeRecycleBtn.addEventListener('click', () => recycleModal.classList.remove('active'));
+        clearRecycleBtn.addEventListener('click', emptyRecycle);
+        emptyRecycleBtn.addEventListener('click', emptyRecycle);
+
+        // 添加/编辑网站
+        addSiteBtn.addEventListener('click', () => {
+            editIndex = -1;
+            editModalTitle.textContent = '添加新网站';
+            updateCategorySelect(); // 打开弹窗时更新分类下拉框
+            editForm.reset();
+            editModal.classList.add('active');
+        });
+        saveSiteBtn.addEventListener('click', saveSite);
+        cancelEditBtn.addEventListener('click', () => {
+            editModal.classList.remove('active');
+            editForm.reset();
+            editIndex = -1;
+        });
+
+        // 自定义分类
+        customCategoryBtn.addEventListener('click', () => {
+            categoryModal.classList.add('active');
+            renderCustomCategoryList();
+        });
+        closeCategoryBtn.addEventListener('click', () => categoryModal.classList.remove('active'));
+        addCategoryBtn.addEventListener('click', addCustomCategory);
+
+                // 弹窗确认/取消
+        modalConfirmBtn.addEventListener('click', () => {
+            if (!currentAction) return;
+
+            // 根据不同的操作类型执行对应逻辑
+            switch (currentAction.type) {
+                // 删除网站到回收站
+                case 'delete':
+                    deleteSite(currentAction.index);
+                    break;
+                // 从回收站彻底删除
+                case 'deleteRecycle':
+                    deleteFromRecycle(currentAction.index);
+                    break;
+                // 移动网站（拖拽排序）
+                case 'move':
+                    moveSite(currentAction.from, currentAction.to);
+                    break;
+                // 从回收站恢复网站
+                case 'restore':
+                    restoreFromRecycle(currentAction.index);
+                    break;
+            }
+
+            // 仅关闭确认弹窗，不影响回收站弹窗状态
+            confirmModal.classList.remove('active');
+            // 清空当前操作记录
+            currentAction = null;
+        });
+
+        // 取消按钮 - 仅关闭弹窗，不执行任何操作
+        modalCancelBtn.addEventListener('click', () => {
+            confirmModal.classList.remove('active');
+            currentAction = null;
+        });
+
+        // 点击弹窗外部区域关闭弹窗
+        // 为所有弹窗绑定点击外部关闭的逻辑
+        [confirmModal, recycleModal, editModal, categoryModal].forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                // 只有点击弹窗最外层容器时才关闭（避免点击弹窗内容区误关）
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        });
+
+        // 页面初始化 - 加载完成后执行
+        window.onload = () => {
+            // 1. 渲染所有分类标签（包含默认+自定义分类）
+            renderCategoryTags();
+            // 2. 更新添加网站的分类下拉选择框
+            updateCategorySelect();
+            // 3. 渲染主页面的网站列表
+            renderSites();
+            // 4. 重新绑定分类标签的点击筛选事件（确保自定义分类也能生效）
+            rebindCategoryEvents();
+	   // 返回顶部按钮逻辑
+            const backToTopBtn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+              backToTopBtn.classList.toggle('show', window.scrollY > 300);
+            });
+            backToTopBtn.addEventListener('click', () => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            });            // 分类栏滚动阴影效果 - 滚动时增加阴影提升视觉体验
+            document.addEventListener('scroll', () => {
+                const topStickyArea = document.querySelector('.top-sticky-area');
+                if (topStickyArea) {
+                    topStickyArea.style.boxShadow = window.scrollY > 100 
+                        ? '0 4px 20px rgba(0, 0, 0, 0.15)' 
+                        : 'none';
+                }
+            });
+
+            // 新增：清除搜索框功能
+            const clearSearchBtn = document.getElementById('clearSearchBtn');
+            if (clearSearchBtn) {
+                clearSearchBtn.addEventListener('click', function() {
+                    searchInput.value = '';      // 清空输入框
+                    searchInput.focus();          // 可选的：让输入框重新获得焦点
+                });
+            }
+        };
+    </script>
+<div class="back-to-top" id="backToTop">
+  <svg width="32" height="44" viewBox="0 0 32 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 火箭 -->
+    <path d="M16 0L26 12H6L16 0Z" fill="#a5b4fc"/>
+    <rect x="10" y="12" width="12" height="14" rx="2" fill="#a5b4fc"/>
+    <path d="M4 26L10 26V18L4 26Z" fill="#a5b4fc"/>
+    <path d="M28 26L22 26V18L28 26Z" fill="#a5b4fc"/>
+    <circle cx="16" cy="18" r="3" fill="#1e293b"/>
+
+    <!-- 火焰 -->
+    <g class="flame">
+      <path d="M12 26 C12 26, 10 32, 16 40, 22 32, 20 26, 20 26 H12" fill="#f87171">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="0.3s" repeatCount="indefinite" />
+      </path>
+      <path d="M13 26 C13 26, 12 30, 16 36, 20 30, 19 26, 19 26 H13" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="0.2s" repeatCount="indefinite" begin="0.1s" />
+      </path>
+    </g>
+  </svg>
+</div></body>
+</html>
+
+
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">极客索引 🚀</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#modalTitle"><span class="nav-number">1.0.1.</span> <span class="nav-text">确认删除该网站？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#recycleModal"><span class="nav-number">1.0.2.</span> <span class="nav-text">🗑️ 回收站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#editModalTitle"><span class="nav-number">1.0.3.</span> <span class="nav-text">添加新网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#categoryModal"><span class="nav-number">1.0.4.</span> <span class="nav-text">📁 自定义分类管理</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Maxkore</p>
+  <div class="site-description" itemprop="description">科技博客 / 程序博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">
+      &copy; <span class="with-love"><i class="fa fa-heart"></i></span>Maxkore
+    </div>
+    
+    <!-- 文档站按钮 -->
+    <div style="margin-top: 15px; text-align: center;">
+      <a href="https://maxkore.bbroot.com/docs/" style="
+        display: inline-block;
+        padding: 10px 30px;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+        transition: all 0.3s ease;
+        border: none;
+      " target="_blank" rel="noopener">
+        <i class="fa fa-book"></i> 访问文档站
+      </a>
+    </div>
+    
+    <!-- Wiki按钮 -->
+    <div style="margin-top: 10px; text-align: center;">
+      <a href="https://maxkore.bbroot.com/Wiki/" style="
+        display: inline-block;
+        padding: 10px 30px;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(255, 154, 158, 0.4);
+        transition: all 0.3s ease;
+        border: none;
+      " target="_blank" rel="noopener">
+        <i class="fa fa-graduation-cap"></i> 访问Wiki
+      </a>
+    </div>
+
+    <!-- 原来的 footer 内容 -->
+    
+      <div class="powered-by">由 undefined 强力驱动 <a href="https://hexo.io" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a></div>
+    
+
+    
+    
+  </div>
+</footer>
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
