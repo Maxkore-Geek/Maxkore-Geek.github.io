@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-    <title>慧学英语</title>
+    <title>慧学英语 · 主题统一</title>
     <style>
         /* ===== 全局科技重置 ===== */
         * {
@@ -306,7 +306,7 @@
 
         .dragging { opacity: 0.4; border-color: #a28eff; transform: scale(0.98); }
 
-        /* 弹窗样式 (颜色由JS控制，此处基础) */
+        /* 弹窗样式 */
         .modal {
             position: fixed;
             top: 0; left: 0;
@@ -444,7 +444,7 @@
         .flame { opacity: 0; transition: opacity 0.2s; }
         .back-to-top:hover .flame { opacity: 1; }
 
-        /* 主题切换按钮 */
+        /* 主题切换按钮 - 现在会随主题变色 */
         .theme-switcher {
             position: fixed;
             top: 1rem; left: 1rem;
@@ -455,7 +455,8 @@
             backdrop-filter: blur(8px);
             padding: 0.5rem;
             border-radius: 40px;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid;
+            transition: background 0.3s, border-color 0.3s;
         }
         .theme-btn {
             width: 40px;
@@ -469,10 +470,11 @@
         .theme-btn.active {
             border-color: white;
             transform: scale(1.15);
-            box-shadow: 0 0 18px #48bbff;
+            box-shadow: 0 0 18px currentColor;
         }
+        /* 主题按钮的基础色 - 保留辨识度，但会根据主题微调边框/光效 */
         .theme-blue { background: linear-gradient(145deg, #0b1a2a, #2c3e50); }
-        .theme-light { background: linear-gradient(145deg, #eef2f6, #d0d9e4); border: 1px solid #aaa; }
+        .theme-light { background: linear-gradient(145deg, #eef2f6, #d0d9e4); }
         .theme-purple { background: linear-gradient(145deg, #1a1025, #3a2b4a); }
 
         @media (max-width: 768px) {
@@ -480,13 +482,11 @@
             .search-input:focus { width: 300px; }
             .theme-switcher { top: auto; bottom: 2rem; left: 1rem; }
         }
-
-        /* 各主题变量将在js中动态设置 */
     </style>
 </head>
 <body>
-<!-- 主题切换器 -->
-<div class="theme-switcher">
+<!-- 主题切换器 - 现在会随主题获得统一的边框/背景色 -->
+<div class="theme-switcher" id="themeSwitcher">
     <div class="theme-btn theme-blue active" data-theme="blue" title="深海蓝"></div>
     <div class="theme-btn theme-light" data-theme="light" title="极简浅灰"></div>
     <div class="theme-btn theme-purple" data-theme="purple" title="霓虹紫"></div>
@@ -668,7 +668,8 @@
     const saveCategoryEditBtn = document.getElementById('saveCategoryEditBtn');
     const cancelCategoryEditBtn = document.getElementById('cancelCategoryEditBtn');
 
-    // 主题按钮
+    // 主题相关
+    const themeSwitcher = document.getElementById('themeSwitcher');
     const themeBtns = document.querySelectorAll('.theme-btn');
 
     // 状态
@@ -688,7 +689,7 @@
     // 初始化
     if (!localStorage.getItem('smartEnglishSites')) saveSites(defaultSites);
 
-    // 主题定义
+    // 主题定义 - 为每个主题增加 switcher 的颜色
     const themes = {
         blue: {
             bodyBg: 'linear-gradient(135deg, #0b1a2a 0%, #1b2b3f 50%, #2c3e50 100%)',
@@ -706,6 +707,8 @@
             catBtnBg: 'rgba(20, 35, 50, 0.9)',
             emptyTip: '#9aaec5',
             headerBorder: 'rgba(72, 187, 255, 0.2)',
+            switcherBg: 'rgba(10, 25, 40, 0.8)',
+            switcherBorder: 'rgba(72, 187, 255, 0.3)',
         },
         light: {
             bodyBg: 'linear-gradient(135deg, #eef2f6 0%, #d9e0e8 50%, #cbd5e0 100%)',
@@ -723,6 +726,8 @@
             catBtnBg: 'rgba(255, 255, 255, 0.9)',
             emptyTip: '#4b5563',
             headerBorder: 'rgba(0, 100, 200, 0.2)',
+            switcherBg: 'rgba(220, 230, 240, 0.9)',
+            switcherBorder: 'rgba(0, 100, 200, 0.3)',
         },
         purple: {
             bodyBg: 'linear-gradient(135deg, #1a1025 0%, #2a1a3a 50%, #3a2b4a 100%)',
@@ -740,10 +745,12 @@
             catBtnBg: 'rgba(40, 25, 60, 0.9)',
             emptyTip: '#b4a3d4',
             headerBorder: 'rgba(180, 130, 255, 0.2)',
+            switcherBg: 'rgba(30, 20, 45, 0.9)',
+            switcherBorder: 'rgba(180, 130, 255, 0.3)',
         }
     };
 
-    // 应用主题
+    // 应用主题 - 现在包括主题切换器的样式
     function applyTheme(themeName) {
         const t = themes[themeName];
         if (!t) return;
@@ -783,7 +790,7 @@
         });
         // 空提示
         document.querySelectorAll('.empty-tip').forEach(el => el.style.color = t.emptyTip);
-        // 弹窗 (简单处理主要背景)
+        // 弹窗
         document.querySelectorAll('.modal-content').forEach(el => {
             el.style.background = t.modalBg;
         });
@@ -802,8 +809,18 @@
         document.querySelectorAll('.category-name').forEach(el => el.style.color = t.bodyColor);
         // 头部下划线
         document.querySelector('.header').style.borderColor = t.headerBorder;
-        // 返回按钮颜色自适应 (部分保留原风格)
-        // 粒子效果保留但降低可见度
+        
+        // ★ 主题切换器本身也应用主题色 ★
+        themeSwitcher.style.background = t.switcherBg;
+        themeSwitcher.style.borderColor = t.switcherBorder;
+        
+        // 主题按钮的高亮光效颜色适配
+        themeBtns.forEach(btn => {
+            if (btn.classList.contains('active')) {
+                btn.style.boxShadow = `0 0 18px ${themeName === 'blue' ? '#48bbff' : (themeName === 'light' ? '#3b82f6' : '#b47aff')}`;
+            }
+        });
+
         // 主题按钮高亮
         themeBtns.forEach(btn => btn.classList.remove('active'));
         document.querySelector(`.theme-btn[data-theme="${themeName}"]`).classList.add('active');
